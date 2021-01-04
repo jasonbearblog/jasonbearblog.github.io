@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="jQuery,Wechat,Login,Tabs,Jason">
+    <meta name="description" content="jQuery,Wechat Login Tabs,Jason">
+    <title>jQuery - Wechat Login Tabs - Jason</title>
+    <script src="https://kit.fontawesome.com/2e89638c11.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wechat-login-container">
+      <div class="wechat-login mt-5">
+        <div class="wechat-login-tabs">
+          <a href="javascript:;" class="wechat-login-item" data-id="wechatLoginNormal" data-tabID="1"><i class="fas fa-desktop"></i></a>
+          <!-- wechat-login-item -->
+          <a href="javascript:;" class="wechat-login-item" data-id="wechatLoginQrcode" data-tabID="2"><i class="fas fa-qrcode"></i></a>
+          <!-- wechat-login-item -->
+        </div>
+        <!-- wechat-login-tabs -->
+        <div class="wechat-login-content">
+          <div class="wechat-login-box active" id="wechatLoginNormal">
+            <form action="">
+              <h6 class="mb-3">账户登入</h6>
+              <div class="form-group">
+                <label for="user_name">用户名</label>
+                <input type="text" name="user_name" id="user_name" placeholder="请输入手机/邮箱/用户名" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="user_name">密码</label>
+                <input type="password" name="user_pw" id="user_pw" placeholder="请输入密码" class="form-control">
+              </div>
+              <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" value="" id="loginTool7days">
+                <label class="form-check-label" for="loginTool7days">记住我，7天免登入</label>
+              </div>
+              <button class="btn btn-primary btn-block">登入</button>
+              <div class="form-group mt-3">
+                <div class="row">
+                  <div class="col-6"><a href="#">忘记密码?</a></div>
+                  <div class="col-6 text-right"><a href="#">注册新账户</a></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- wechatLoginNormal -->
+          <div class="wechat-login-box" id="wechatLoginQrcode">
+            <h6 class="mb-3">手机扫码，安全登入</h6>
+            <div class="wechat-animate-box">
+              <div class="wechat-qrcode"><img src="images/qrcode.png" alt="" class="img-fluid"></div>
+              <div class="wechat-guide"><img src="images/screen-with-iphone.png" alt="" class="img-fluid"></div>
+            </div>
+            <div class="wechat-tips text-center"><i class="fas fa-info-circle"></i> 打开微信，扫一扫登入</div>
+          </div>
+          <!-- wechatLoginQrcode -->
+        </div>
+        <!-- wechat-login-content -->
+      </div>
+      <!-- wechat-login -->
+    </div>
+    <!-- wechat-login-container -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>

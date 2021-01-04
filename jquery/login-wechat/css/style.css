@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/**
+ * @Author: Jason
+ * @Date:   2020-01-13T10:21:45+08:00
+ * @Email:  jasonworks@qq.com
+ * @Last modified by:   Jason
+ * @Last modified time: 2020-01-14T16:45:49+08:00
+ */
+
+/* style settings */
+body{
+  background: #e6e6e6;
+}
+
+
+
+
+/* container */
+.wechat-login-container{
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+
+
+
+/* login */
+.wechat-login{
+  background: #FFF;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.025);
+  position: relative;
+  min-height: 365px;
+  font-size: 14px;
+}
+
+
+
+
+/* tabs */
+.wechat-login-tabs{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.wechat-login-item{
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 32px;
+}
+.wechat-login-item:last-child{
+  font-size: 40px;
+}
+.wechat-login-item:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 0 0 60px;
+  border-color: transparent transparent transparent #FFF;
+}
+
+
+
+
+/* tabs content */
+.wechat-login-box{
+  display: none;
+}
+.wechat-login-box.active{
+  display: block;
+}
+.wechat-login-box h6{
+  font-weight: 700;
+}
+.wechat-login-box input{
+  font-size: 14px;
+}
+
+
+
+
+/* animate box */
+.wechat-animate-box{
+  margin: 60px 0;
+  position: relative;
+}
+.wechat-qrcode{
+  width: 130px;
+  height: 130px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  padding: 5px;
+  margin: 0 auto;
+  transition: all .3s;
+  transform: translateX(0);
+}
+.wechat-qrcode img{
+  max-width: 120px;
+}
+.wechat-tips{
+  color: #666;
+}
+.wechat-guide{
+  max-width: 120px;
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  transition: all .3s;
+  opacity: 0;
+  transform: translateX(0);
+}
+.wechat-animate-box:hover .wechat-qrcode{
+  transform: translateX(-50%);
+}
+.wechat-animate-box:hover .wechat-guide{
+  opacity: 1;
+  transform: translateX(-10%);
+}
